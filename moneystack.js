@@ -8,5 +8,6 @@
 
     d3.csv("splitwise.csv", function(error, data) {
         console.log(data);
+        console.log(error);
     });
 })(d3);
