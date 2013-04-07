@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>MoneyStack</title>
+<body>
+
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.area {
+  fill: steelblue;
+}
+
+.line {
+  stroke: blue;
+  fill: none;
+}
+
+</style>
+
+<script src="d3.min.js"></script>
+<!-- <script src="moneystack.js"></script> -->
+<script src="whatever.js"></script>
+
+<script>
+/*
+(function(d3) {
+
+    //Settings    
+    var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 900,
+    height = 300,
+
+    //Internal Data
+    nums = [2, 4, 5, 8, 1, 7, 4, 5, 7,2,9,8,-4,5,6],
+    tCost = [
+        {"date": "2012-01-05", "cost": "3.68"},
+        {"date": "2012-02-06", "cost": "1.08"},
+        {"date": "2012-03-12", "cost": "5.68"},
+        {"date": "2012-04-21", "cost": "7.00"},
+        {"date": "2012-05-23", "cost": "2.38"}
+    ];
+
+    //Date formatter
+    var parseDate = d3.time.format("%Y-%m-%d").parse;
+
+    //Line graph
+    tCost.forEach(function(d) {
+        d.date = parseDate(d.date);
+        d.cost = +d.cost;
+      });
+
+    //Axes setup
+    var x = d3.time.scale()
+        .domain(d3.extent(tCost, function(d) { return d.date;}))
+        .range([0, width]);
+
+    var y = d3.scale.linear()
+        .domain(d3.extent(tCost, function(d) {return d.cost;}))
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    //SVG Setup
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate("+margin.left+","+margin.top+")");
+
+    var line = d3.svg.line()
+        .x(function(d) { return x(d.date); })
+        .y(function(d) { return y(d.cost); });
+
+    //SVG Creation
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+
+    svg.append("path")
+        .datum(tCost)
+        .attr("class", "line")
+        .attr("d", line);
+        
+})(d3);
+*/
+</script>
+    
